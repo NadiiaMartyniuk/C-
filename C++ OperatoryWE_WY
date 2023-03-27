@@ -1,0 +1,88 @@
+
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+/*Zad.1.1 Zmienne i przestrzenie nazw
+Zdefiniuj zmienne: imie i wiek z przypisanymi wartościami.
+Zdefiniuj identyczne zmienne w przestrzeniach: kolega1 i kolega2.
+Wyświetl wszystkie dane.*/
+
+/*namespace kolega1{
+    char imie[]="Roman";
+    int wiek=21;
+}
+namespace kolega2{
+    char imie[]="Olcha";
+    int wiekk=18;
+}
+using kolega2::wiekk;
+int main()
+{
+    char imie[20];
+    int wiek;
+    cout<<"Wright name "<<endl;
+    cin>>imie;
+    cout<<"How old are you ? "<<endl;
+    cin>>wiek;
+    cout<<"Twoje dane: "<<imie<<" "<<wiek<<endl;
+    cout<<"Kolega 1 "<<kolega1::imie<<" "<<kolega1::wiek<<endl;
+    cout<<"Kolega 2 "<<kolega2::imie<<" "<<wiekk<<endl;
+    return 0;
+}
+*/
+
+/*Zad.1.2 Strumieniowe WE/WY z wykorzystaniem różnych bibliotek i manipulatorów
+Zdefiniuj zmiene typu: char, int, float, double oraz zmienną łańcuchową.
+Wprowadź i wyprowadź te dane z wykorzystaniem funkcji printf() i scanf() (C) oraz z
+wykorzystaniem obiektów cin, cout i operatorów strumieniowych << i >> (C++)
+
+Wykorzystaj manipulatory do sformatowania liczb rzeczywistych w formacie dziesiętnym
+(float) i naukowym (double) z dwoma miejscami po przecinku.
+Tablicę znakową wyświetl dwukrotnie dla szerokości pola 20 znaków, raz wyrównaną do
+lewej, raz do prawej z dowolnymi znakami wypełnienia.
+Liczbę całkowitą wyświetl 9 razy w 3 kolumnach i 3 wierszach.*/
+
+/*int main(){
+    char imie[20];
+    int wiek;
+    float jakas_liczba;
+    double jakas_duza_liczba;
+    string wiersz;
+    printf("Wprowadz imie ");
+    scanf("%s", &imie);
+    printf("Wiek: ");
+    scanf("%d", &wiek);
+    printf("Jakas liczba ");
+    scanf("%f", &jakas_liczba);
+    printf("Jakas dluga liczba ");
+    scanf("%lf", &jakas_duza_liczba);
+    printf("Twoje dane 1: ");
+    printf("%s, %d, %f, %lf", imie, wiek, jakas_liczba, jakas_duza_liczba);
+    cout<<endl<<endl<<"NOWE DANE"<<endl;
+    cout<<endl<<"Imie ";
+    cin>>imie;
+    cout<<"Wiek: ";
+    cin>>wiek;
+    cout<<"Jakas liczba ";
+    cin>>jakas_liczba;
+    cout<<"Jakas duza liczba ";
+    cin>>jakas_duza_liczba;
+    cout<<"Wpisz wiersz ";
+    cin>>wiersz;
+    cout<<imie<<" "<<wiek<<" "<<fixed<<setprecision(2)<<jakas_liczba<<" "<<setprecision(2)<<jakas_duza_liczba<<" "<<wiersz<<endl;
+    cout<<left<<setw(20)<<setfill('*')<<imie<<endl;
+    cout<<right<<setw(20)<<imie<<setfill('*')<<endl;
+    int tab[3][3];
+    for (int i=0; i<3; i++){
+        for (int j=0; j<3; j++){
+            tab[i][j]=jakas_liczba;
+        }
+    }
+    for (int i=0; i<3; i++){
+        for (int j=0; j<3; j++){
+            cout<<tab[i][j]<<"\t";
+        }
+        cout<<endl;
+    }
+return 0;}*/
