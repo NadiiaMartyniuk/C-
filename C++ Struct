@@ -1,0 +1,96 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+/*Wczytaj dane o pracownikach (imię, nazwisko, stawka za godzinę, liczba godzin, data
+zatrudnienia) do tablicy struktur.
+Oblicz kwoty do wypłaty dla każdego pracownika.
+Wyświetl listę płac pracowników.*/
+
+/*struct pracowniki{
+    string imie;
+    string nazwisko;
+    float stawka_god;
+    float god;
+    string data;
+};
+
+int main(){
+    int ile;
+    cout<<"Ile masz pracownikow ";
+    cin>>ile;
+    if (ile<0){
+        cout<<"Niepoprawne dane";
+        return 0;
+    }
+    pracowniki tab[ile];
+    float kwota[ile];
+    for (int i=0; i<ile; i++){
+        cout<<"Imie "<<i+1<<" pracownika"<<endl;
+        cin>>tab[i].imie;
+        cout<<"Nazwisko "<<i+1<<" pracownika"<<endl;
+        cin>>tab[i].nazwisko;
+        cout<<"Stawka za godzinu "<<endl;
+        cin>>tab[i].stawka_god;
+        cout<<"Ile godzin pracowal "<<endl;
+        cin>>tab[i].god;
+        cout<<"Data zatrudnienia "<<endl;
+        cin>>tab[i].data;
+    }
+    for (int i=0; i<ile; i++){
+        kwota[i]=tab[i].stawka_god*tab[i].god;
+    }
+    for(int i=0; i<ile; i++){
+        cout<<tab[i].imie<<" "<<tab[i].nazwisko<<" otrzymuje "<<kwota[i]<<endl;
+    }
+    return 0;
+}*/
+
+/*Oblicz średnią ocen studenta o podanym imieniu i nazwisku zdającego w sesji 3 egzaminy.
+Zdefiniuj odpowiednią strukturę. Napisz funkcje wczytujące dane, obliczające średnią i
+wyświetlające wyniki.*/
+
+struct studenty{
+    string imie;
+    string nazwisko;
+    float ocena1;
+    float ocena2;
+    float ocena3;
+};
+
+void Srednia (int ile, studenty tab[], float srednia_ocen[]){
+    for (int i=0; i<ile; i++){
+        srednia_ocen[i]=(tab[i].ocena1+tab[i].ocena2+tab[i].ocena3)/3;
+        }
+    cout<<"SREDNI OCENY"<<endl;
+    for (int i=0; i<ile; i++){
+        cout<<tab[i].imie<<" "<<tab[i].nazwisko<<" "<<srednia_ocen[i]<<endl;
+    }
+}
+
+int main(){
+    int ile;
+    cout<<"Ile studentow ";
+    cin>>ile;
+    if (ile<0){
+        cout<<"Niepoprawne dane";
+        return 0;
+    }
+    studenty tab[ile];
+    float srednia_ocen[ile];
+    for (int i=0; i<ile; i++){
+        cout<<"Imie "<<i+1<<" studenta ";
+        cin>>tab[i].imie;
+        cout<<"Nazwisko "<<i+1<<" studenta ";
+        cin>>tab[i].nazwisko;
+        cout<<"Ocena 1 ";
+        cin>>tab[i].ocena1;
+        cout<<"Ocena 2 ";
+        cin>>tab[i].ocena2;
+        cout<<"Ocena 3 ";
+        cin>>tab[i].ocena3;
+    }
+    Srednia(ile, tab, srednia_ocen);
+    return 0;
+}
+
