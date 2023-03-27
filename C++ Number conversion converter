@@ -1,0 +1,29 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+/*Napisz konwerter zamieniający liczbę z postaci dziesiętnej na system ósemkowy lub
+szestnastkowy z pokazaniem podstawy wg wyboru użytkownika.*/
+
+/*int main(){
+    int liczba;
+    int system;
+    cout<<"Wpisz liczbe ";
+    cin>>liczba;
+    cout<<"Jaki system chcesz ?"<<endl;
+    cout<<"1- Osiemkowy"<<endl;
+    cout<<"2- Szesnastkowy"<<endl;
+    cin>>system;
+    switch(system){
+    case 1:
+        cout<<showbase<<oct<<liczba<<endl;
+        break;
+    case 2:
+        cout<<showbase<<hex<<liczba<<endl;
+        break;
+    default:
+        cout<<"Nie ma takiej opcji"<<endl;
+
+    }
+    return 0;
+}*/
